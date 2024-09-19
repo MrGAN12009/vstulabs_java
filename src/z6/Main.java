@@ -15,23 +15,23 @@ public class Main {
             params[i] = Double.valueOf(s);
             i++;
         }
-
+        Nasled2 tr;
         switch (params.length){
             case 0:
-                Nasled2 tr = new Nasled2();
+                tr = new Nasled2();
                 break;
             case 1:
-                Nasled2 tr = new Nasled2(params[0]);
+                tr = new Nasled2(params[0]);
                 break;
             case 2:
-                Nasled2 tr = new Nasled2(params[0], params[1]);
+                tr = new Nasled2(params[0], params[1]);
                 break;
             case 3:
-                Nasled2 tr = new Nasled2(params[0], params[1], params[2]);
+                tr = new Nasled2(params[0], params[1], params[2]);
                 break;
 
             default:
-                Nasled2 tr = new Nasled2(params[0], params[1], params[2]);
+                tr = new Nasled2(params[0], params[1], params[2]);
                 break;
         }
 
