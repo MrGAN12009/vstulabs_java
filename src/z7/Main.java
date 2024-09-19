@@ -7,6 +7,7 @@ public class Main {
         Truck semi = new Truck(2, 200, 7, 44000);
         Truck pickup = new Truck(3, 28, 15, 2000);
         bus bus = new bus(14, 60, 80, 40);
+        byke byke = new byke(1, 60, 6);
 
 
         double litr;
@@ -28,5 +29,10 @@ public class Main {
         System.out.println("ПОедет ли автобус? - " + bus.rdyToStart());
         System.out.println("В данный момент в автобусе " + bus.getPass() + " пассажиров.");
         System.out.println("Максимм пассажиров - " + bus.getMaxPass());
+
+        litr = byke.rasxod1(dist);
+        System.out.println("Чтобы проехать " + dist + " километров, byke необходимо " + litr + " литров топлива.");
+        byke.rdy();
+
     }
 }
