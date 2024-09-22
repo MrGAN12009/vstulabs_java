@@ -10,7 +10,7 @@ public class nasled1 {
     }
 
     nasled1(double x){
-        width = height = x;
+        width = height = third = x;
     }
 
     nasled1(double w, double h){

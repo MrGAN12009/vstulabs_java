@@ -20,26 +20,22 @@ public class Nasled2 extends nasled1{
 
     Nasled2(double w, double h){
         super(w, h);
-        if (w == h){
-            style = "Равнобедренный";
+        style = "Равнобедренный";
+        if ( (2 * w*w) == h*h ){
+            setThird(w);
+            style = style + "и прямоугольный";
+        } else if ( (2 * h*h) == w*w ) {
+            setThird(h);
+            style = style + "и прямоугольный";
         } else {
-            style = "Разносторонний";
+            setThird(w);
         }
     }
 
 
-    Nasled2(String s, double w, double h){
-        super(w, h);
-        style = s;
-    }
-
     Nasled2(double w, double h, double t){
         super(w, h, t);
-        if ((w == h) && (w == t) && (h == t)){
-            style = "Равносторонний";
-        } else if ( (w == h) || (w == t) || (h == t) ){
-            style = "Равнобедренный";
-        } else if (( (Math.pow(t, 2) + Math.pow(h, 2)) == Math.pow(w, 2) ) || ( (Math.pow(t, 2) + Math.pow(w, 2)) == Math.pow(h, 2) ) || ( (Math.pow(h, 2) + Math.pow(w, 2)) == Math.pow(t, 2) )){
+        if (( (Math.pow(t, 2) + Math.pow(h, 2)) == Math.pow(w, 2) ) || ( (Math.pow(t, 2) + Math.pow(w, 2)) == Math.pow(h, 2) ) || ( (Math.pow(h, 2) + Math.pow(w, 2)) == Math.pow(t, 2) )){
             style = "Прямоугольный";
         }else{
             style = "Разностронний";
@@ -49,12 +45,13 @@ public class Nasled2 extends nasled1{
 
 
     double area(){
-        return getWidth()*getHeight()/2;
+        double p = (getHeight() + getWidth() + getThird())/2;
+        return Math.sqrt( p * (p - getHeight()) * (p - getWidth()) * (p - getThird()) );
     }
 
 
     double perimetr(){
-        return getHeight() + getWidth() + getThird();
+        return getWidth() + getHeight() + getThird();
     }
 
 
