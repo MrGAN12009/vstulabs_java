@@ -6,7 +6,6 @@ public class Main {
     public static void main(String[] args){
         while ( true ) {
 
-
             Scanner scanner = new Scanner(System.in);
             System.out.println("Введите стороны треугольника.");
             String text = scanner.nextLine();

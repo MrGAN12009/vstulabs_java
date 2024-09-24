@@ -4,10 +4,6 @@ public class Nasled2 extends nasled1{
     private String style;
 
 
-
-
-
-
     Nasled2(){
         super ();
         style = "null";

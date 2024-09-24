@@ -5,6 +5,12 @@ public class nasled1 {
     private double height;
     private double third;
 
+    nasled1(double[] arr){
+        width = arr[0];
+    }
+
+
+
     nasled1(){
         width = height = 0.0;
     }
