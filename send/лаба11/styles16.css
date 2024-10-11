@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: justify;
+}
+
+header{
+    color: white;
+    background: url('l16i1.jpg');
+    background-size:cover;
+    height: 20vh;
+    width: 100vw;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1{
+    padding-top: 3vh;
+    margin-left: 20vw;
+}
+header p{
+    margin-left: 25vw;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+
+.left{
+    max-width: 28vw;
+}
+
+.left h2{
+    margin: 10px 10px 0 10px;
+    font-weight: bold;
+}
+
+.left p{
+    margin: 0 10px 10px 10px;
+}
+
+.left img{
+    margin: 10px 0 0 0;
+    width: 28vw;
+    max-height: 10vh;
+}
+
+.right{
+    width: 70vw;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.right img{
+    max-height: 30vh;
+    width: 70vw;
+}
+
+.right h1{
+    margin: 10px 0;
+}
+.right p{
+    margin-bottom: 10px;
+}
